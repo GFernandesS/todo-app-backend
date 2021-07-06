@@ -1,2 +1,2 @@
 # todo-app-backend
-Backend of a todo-app application written in NodeJS
+Simple Backend of a todo-app application written in NodeJS
