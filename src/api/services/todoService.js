@@ -24,5 +24,5 @@ export const update = async (id, todoUpdated) => {
 
   const result = await Todo.updateOne({ _id: id }, updateDefinition);
 
-  if (!result.nModified) throw new Error("Todo not found");
+  if (!result.n) throw new Error("Todo not found");
 };

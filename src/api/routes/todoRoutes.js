@@ -19,7 +19,7 @@ export default (app) => {
   app.patch("/todo/:id", async (req, res) => {
     try {
       await todoServices.update(req.params.id, req.body);
-      res.sendStatus(200);
+      res.status(200).send();
     } catch (error) {
       res.status(422).json({ message: error.message });
     }
